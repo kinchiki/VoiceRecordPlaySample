@@ -23,4 +23,34 @@
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/messageTextView"
             android:onClick="changeTextView"/>
+    <Button
+            android:text="@string/record_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startRecordingButton" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.152" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/changeButton"
+            android:onClick="startRecording"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopRecordingButton" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.834" app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="stopRecording" android:text="@string/stop_record" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/changeButton"/>
+    <Button
+            android:text="@string/start_playing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startPlayingButton" android:onClick="startPlaying"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopPlayingButton"/>
+    <Button
+            android:text="@string/stop_playing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopPlayingButton" android:onClick="stopPlaying"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="64dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
 </android.support.constraint.ConstraintLayout>
